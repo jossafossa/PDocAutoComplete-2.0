@@ -14,19 +14,19 @@ See [PDOK API Documentation](https://api.pdok.nl/bzk/locatieserver/search/v3_1/u
 ### Installation
 
 ```bash
-pnpm install pdok
+pnpm install pdok-api-wrapper
 # or
-npm install pdok
+npm install pdok-api-wrapper
 # or
-yarn add pdok
+yarn add pdok-api-wrapper
 ```
 
 ### Usage
 
-Import the desired modules from `pdok` in your TypeScript or JavaScript project:
+Import the desired modules from `pdok-api-wrapper` in your TypeScript or JavaScript project:
 
 ```typescript
-import { lookup, suggest, reverse, free } from 'pdok';
+import { lookup, suggest, reverse, free } from 'pdok-api-wrapper';
 
 // Example: Lookup address
 const result = await lookup({ id: 'adr-48e52dd1c34a056d3dccf14e62fda443' });
