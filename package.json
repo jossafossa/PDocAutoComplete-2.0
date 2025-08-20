@@ -1,6 +1,6 @@
 {
-  "name": "pdok",
-  "version": "1.0.1",
+  "name": "pdok-api-wrapper",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",

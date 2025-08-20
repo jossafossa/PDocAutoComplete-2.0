@@ -1,6 +1,6 @@
-# PDok TypeScript
+# PDok Api Wrapper
 
-PDok TypeScript is a TypeScript library designed to interact with PDOK (Publieke Dienstverlening Op de Kaart) geocoding and location services. It provides a modular, type-safe interface for accessing PDOK endpoints and working with geospatial data in modern web applications.
+PDok Api Wrapper is a TypeScript library designed to interact with PDOK (Publieke Dienstverlening Op de Kaart) geocoding and location services. It provides a modular, type-safe interface for accessing PDOK endpoints and working with geospatial data in modern web applications.
 
 See [PDOK API Documentation](https://api.pdok.nl/bzk/locatieserver/search/v3_1/ui/#/Locatieserver/free) for more details.
 
