@@ -1,4 +1,4 @@
-import type { Doc } from "../../pdokTypes";
+import type { Doc } from "../../types";
 import { pointToLatLong } from "../pointToLatLong/pointToLatLong";
 
 type DocWithLatLong<T extends Record<string, unknown>> = Omit<

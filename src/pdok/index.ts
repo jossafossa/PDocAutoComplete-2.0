@@ -1,2 +1,2 @@
 export * from "./endpoints";
-export * from "./pdokTypes";
+export * from "./types";

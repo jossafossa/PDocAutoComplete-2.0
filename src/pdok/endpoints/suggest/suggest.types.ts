@@ -1,4 +1,4 @@
-import type { Suggestion, components, operations } from "../../pdokTypes";
+import type { Suggestion, components, operations } from "../../types";
 
 export type SuggestParams = operations["suggest"]["parameters"]["query"];
 export type SuggestHighlighting = components["schemas"]["highlighting"];
@@ -9,4 +9,4 @@ export type SuggestResponse = {
   };
   highlighting: SuggestHighlighting;
   spellcheck: SuggestSpellcheck;
-}
+};
