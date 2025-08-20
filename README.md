@@ -67,7 +67,7 @@ pnpm run dev
 
 - `pnpm run build` – Build the library
 - `pnpm run dev` – Start the demo app
-- `pnpm run lint` – Run ESLint for code quality
+- `pnpm run release` – Publish the package
 
 ## Contributing
 
