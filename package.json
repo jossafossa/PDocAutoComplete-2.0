@@ -1,36 +1,21 @@
 {
-  "name": "pdok-api-wrapper",
-  "version": "1.0.5",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "release": "npm publish"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "release": "turbo run release",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
+    "turbo": "^2.5.6",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
     "vite-plugin-dts": "^4.5.4"
   },
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jossafossa/PDocAutoComplete-2.0.git"
-  },
-  "author": "Jossafossa",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
-    }
-  }
+  "packageManager": "pnpm@10.15.1"
 }

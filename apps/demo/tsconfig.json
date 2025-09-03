@@ -1,0 +1,14 @@
+{
+  "extends": "@pdok/typescript-config/vite.json",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "paths": {
+      "@jossafossa/pdok-base": [
+        "../../packages/base/src"
+      ]
+    }
+  }
+}

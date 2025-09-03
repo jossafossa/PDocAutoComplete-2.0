@@ -55,6 +55,14 @@ pnpm install
 pnpm run dev
 ```
 
+## Project Structure
+
+- `src/pdok/` – Core PDOK API modules and types
+- `src/pdok/utils/` – Utility functions (caching, data transformation, etc.)
+- `src/pdok/endpoints/` – Individual PDOK endpoint implementations
+- `src/pdok/types` – Type definitions for PDOK responses
+- `demo/` – React demo application
+
 ### Scripts
 
 - `pnpm run build` – Build the library
