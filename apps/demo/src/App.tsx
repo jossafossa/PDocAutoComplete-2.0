@@ -55,8 +55,8 @@ export const App = () => {
         <br />
 
         <label htmlFor="type-select">Type:</label>
-        <select name="type" id="type-select">
-          <option value="all" selected>
+        <select name="type" id="type-select" defaultValue="adres">
+          <option value="all">
             Alle
           </option>
           <option value="provincie">Provincie</option>
@@ -64,7 +64,7 @@ export const App = () => {
           <option value="woonplaats">Woonplaats</option>
           <option value="weg">Weg</option>
           <option value="postcode">Postcode</option>
-          <option value="adres" selected>
+          <option value="adres">
             Adres
           </option>
           <option value="perceel">Perceel</option>
@@ -77,8 +77,8 @@ export const App = () => {
         <br />
 
         <label htmlFor="bron">Bron:</label>
-        <select name="bron" id="bron">
-          <option value="all" selected>
+        <select name="bron" id="bron" defaultValue="all">
+          <option value="all">
             Alle
           </option>
           <option value="BAG">
