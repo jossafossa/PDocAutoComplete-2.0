@@ -1,3 +1,21 @@
+import { pointToLatLong } from "../../utils/";
 import type { LookupResponse } from "./lookup.types";
 
-export const transform = (data: LookupResponse) => data;
+const mapDocWithPosition = (doc: LookupResponse["response"]["docs"][number]) => ({
+    ...doc,
+    position: pointToLatLong(doc.centroide_ll),
+});
+
+
+export const transform = (data: LookupResponse) => {
+
+    const docs = data.response.docs.map(mapDocWithPosition);
+
+    return {
+        ...data,
+        response: {
+            ...data.response,
+            docs
+        },
+    };
+};
